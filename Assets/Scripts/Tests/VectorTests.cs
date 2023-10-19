@@ -34,6 +34,10 @@ public class VectorTests
         Assert.AreEqual(20, secondVector.X);
         Assert.AreEqual(30, secondVector.Y);
         Assert.AreEqual(0, secondVector.Z);
+
+
+
+
     }
 
     [Test]

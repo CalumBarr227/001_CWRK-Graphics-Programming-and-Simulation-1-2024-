@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 871.3334
-    y: 287.33334
+    x: 1722
+    y: 636.6667
     width: 321.33334
-    height: 567.3334
+    height: 573.3334
   m_ShowMode: 0
   m_Title: Test Runner
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
+  m_MinSize: {x: 101, y: 123}
+  m_MaxSize: {x: 4001, y: 4023}
   m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -40,10 +40,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 42.666668
-    width: 1706.6667
-    height: 877.3334
+    width: 2560
+    height: 1349.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -66,7 +66,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 321.33334
-    height: 567.3334
+    height: 573.3334
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -93,11 +93,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 321.33334
-    height: 567.3334
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
+    height: 573.3334
+  m_MinSize: {x: 101, y: 123}
+  m_MaxSize: {x: 4001, y: 4023}
   vertical: 0
-  controlID: 15
+  controlID: 183
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -117,12 +117,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1706.6666
-    height: 827.3333
-  m_MinSize: {x: 300, y: 200}
+    width: 2560
+    height: 1299.3334
+  m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 44
+  controlID: 108
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,12 +138,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1304
+    x: 1956.6666
     y: 0
-    width: 402.66663
-    height: 827.3333
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 603.3334
+    height: 1299.3334
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -166,10 +166,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 322.66666
-    height: 490
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 483.33334
+    height: 770
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -191,9 +191,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 490
-    width: 1304
-    height: 337.3333
+    y: 770
+    width: 1956.6666
+    height: 529.3334
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
@@ -222,8 +222,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1706.6666
-    height: 877.3333
+    width: 2560
+    height: 1349.3334
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -247,7 +247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1706.6666
+    width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -268,8 +268,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 857.3333
-    width: 1706.6666
+    y: 1329.3334
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -292,12 +292,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1304
-    height: 827.3333
-  m_MinSize: {x: 200, y: 200}
+    width: 1956.6666
+    height: 1299.3334
+  m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 45
+  controlID: 38
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,12 +317,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1304
-    height: 490
-  m_MinSize: {x: 200, y: 100}
+    width: 1956.6666
+    height: 770
+  m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 46
+  controlID: 39
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,12 +338,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 322.66666
+    x: 483.33334
     y: 0
-    width: 981.3334
-    height: 490
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 1473.3333
+    height: 770
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -370,10 +370,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 871.3334
-    y: 287.33334
+    x: 1722
+    y: 636.6667
     width: 321.33334
-    height: 546.3334
+    height: 552.3334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -385,12 +385,12 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 138
+    ID: 213
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 356.66666
-    - 119.33334
+    - 361.33334
+    - 120.666664
     relativeSizes:
     - 0.75
     - 0.25
@@ -400,7 +400,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 476
+    lastTotalSize: 482
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -452,7 +452,7 @@ MonoBehaviour:
       name: GPaS1TestLabs2
       fullName: GPaS1TestLabs2
       resultStatus: 2
-      duration: 0.0791407
+      duration: 0.0516199
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -463,12 +463,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1030
-      uniqueId: '[Tests][C:/Student Githubs/GPAS1Template/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1031
+      uniqueId: '[Tests][G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
-      fullName: C:/Student Githubs/GPAS1Template/Library/ScriptAssemblies/Tests.dll
+      fullName: G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.0368018
+      duration: 0.0190093
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -484,7 +484,7 @@ MonoBehaviour:
       name: MatrixTests
       fullName: MatrixTests
       resultStatus: 2
-      duration: 0.0241918
+      duration: 0.0060955
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -493,19 +493,17 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1030
-      parentUniqueId: '[Tests][C:/Student Githubs/GPAS1Template/Library/ScriptAssemblies/Tests.dll][suite]'
+      parentId: 1031
+      parentUniqueId: '[Tests][G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1002
       uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.Constructor]
       name: Constructor
       fullName: MatrixTests.Constructor
-      resultStatus: 2
-      duration: 0.0114527
-      messages: "  Expected: 1\r\n  But was:  -1.0f\r\n"
+      resultStatus: 1
+      duration: 0.0001308
+      messages: 
       output: 
-      stacktrace: 'at MatrixTests.Constructor () [0x00056] in C:\Student Githubs\GPAS1Template\Assets\Scripts\Tests\MatrixTests.cs:16
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -518,16 +516,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateIdentity]
       name: CreateIdentity
       fullName: MatrixTests.CreateIdentity
-      resultStatus: 2
-      duration: 0.0010123
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0001036
+      messages: 
       output: 
-      stacktrace: "  at MatrixTests.CreateIdentity () [0x00006] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:40
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -540,16 +533,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateRotationX]
       name: CreateRotationX
       fullName: MatrixTests.CreateRotationX
-      resultStatus: 2
-      duration: 0.0004311
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000839
+      messages: 
       output: 
-      stacktrace: "  at MatrixTests.CreateRotationX () [0x00019] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:117
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -563,15 +551,16 @@ MonoBehaviour:
       name: CreateRotationY
       fullName: MatrixTests.CreateRotationY
       resultStatus: 2
-      duration: 0.0002822
+      duration: 0.0001828
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
-      stacktrace: "  at MatrixTests.CreateRotationY () [0x00019] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:144
+      stacktrace: "  at MatrixTests.CreateRotationY () [0x00019] in G:\\Year 2\\Graphics
+        and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:144
         \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
         at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+        System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -585,15 +574,16 @@ MonoBehaviour:
       name: CreateRotationZ
       fullName: MatrixTests.CreateRotationZ
       resultStatus: 2
-      duration: 0.0002689
+      duration: 0.0001654
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
-      stacktrace: "  at MatrixTests.CreateRotationZ () [0x00019] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:171
+      stacktrace: "  at MatrixTests.CreateRotationZ () [0x00019] in G:\\Year 2\\Graphics
+        and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:171
         \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
         at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+        System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -606,16 +596,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateScale]
       name: CreateScale
       fullName: MatrixTests.CreateScale
-      resultStatus: 2
-      duration: 0.0003064
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.00009
+      messages: 
       output: 
-      stacktrace: "  at MatrixTests.CreateScale () [0x0001f] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:90
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -629,16 +614,13 @@ MonoBehaviour:
       name: CreateTranslation
       fullName: MatrixTests.CreateTranslation
       resultStatus: 2
-      duration: 0.0002668
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      duration: 0.0002853
+      messages: "  Expected: 1\r\n  But was:  0.0f\r\n"
       output: 
-      stacktrace: "  at MatrixTests.CreateTranslation () [0x0001f] in C:\\Student
-        Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:65 \r\n  at
-        (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 'at MatrixTests.CreateTranslation () [0x0001f] in G:\Year 2\Graphics
+        and Simulation\Lab 1\the-labs-CalumBarr\Assets\Scripts\Tests\MatrixTests.cs:65
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -651,11 +633,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.Inverse]
       name: Inverse
       fullName: MatrixTests.Inverse
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0001462
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at MatrixTests.Inverse () [0x00048] in G:\\Year 2\\Graphics
+        and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:303
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -669,15 +657,16 @@ MonoBehaviour:
       name: Multiply
       fullName: MatrixTests.Multiply
       resultStatus: 2
-      duration: 0.0006559
+      duration: 0.0001462
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
-      stacktrace: "  at MatrixTests.Multiply () [0x0005e] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:232
+      stacktrace: "  at MatrixTests.Multiply () [0x0006c] in G:\\Year 2\\Graphics
+        and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:235
         \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
         at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+        System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -691,15 +680,16 @@ MonoBehaviour:
       name: MultiplyVector
       fullName: MatrixTests.MultiplyVector
       resultStatus: 2
-      duration: 0.0002711
+      duration: 0.0001336
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
-      stacktrace: "  at MatrixTests.MultiplyVector () [0x00033] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\MatrixTests.cs:196
+      stacktrace: "  at MatrixTests.MultiplyVector () [0x0003f] in G:\\Year 2\\Graphics
+        and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:199
         \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
         at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+        System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -708,13 +698,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
-    - id: 1011
+    - id: 1012
       uniqueId: Tests.dll/[Tests][VectorTests][suite]
       name: VectorTests
       fullName: VectorTests
-      resultStatus: 2
-      duration: 0.0115605
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0084717
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -722,55 +712,48 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1030
-      parentUniqueId: '[Tests][C:/Student Githubs/GPAS1Template/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1013
+      parentId: 1031
+      parentUniqueId: '[Tests][G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1014
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Add]
       name: Add
       fullName: VectorTests.Add
-      resultStatus: 2
-      duration: 0.0002792
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0001111
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.Add () [0x0003c] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:28
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1028
+    - id: 1029
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.AngleBetween]
       name: AngleBetween
       fullName: VectorTests.AngleBetween
-      resultStatus: 2
-      duration: 0.0011926
-      messages: "  Expected: -1.0d +/- 0.001d\r\n  But was:  1.5707963267948966d\r\n"
+      resultStatus: 1
+      duration: 0.0000741
+      messages: 
       output: 
-      stacktrace: 'at VectorTests.AngleBetween () [0x0003b] in C:\Student Githubs\GPAS1Template\Assets\Scripts\Tests\VectorTests.cs:238
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1012
+    - id: 1013
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Constructor]
       name: Constructor
       fullName: VectorTests.Constructor
       resultStatus: 1
-      duration: 0.0014843
+      duration: 0.000058
       messages: 
       output: 
       stacktrace: 
@@ -780,58 +763,48 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1029
+    - id: 1030
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.CrossProduct]
       name: CrossProduct
       fullName: VectorTests.CrossProduct
-      resultStatus: 2
-      duration: 0.0002456
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000681
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.CrossProduct () [0x0003c] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:253
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1016
+    - id: 1017
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Divide]
       name: Divide
       fullName: VectorTests.Divide
-      resultStatus: 2
-      duration: 0.0001955
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000648
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.Divide () [0x00028] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:78
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1023
+    - id: 1024
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.DotProductIsNegative]
       name: DotProductIsNegative
       fullName: VectorTests.DotProductIsNegative
       resultStatus: 1
-      duration: 0.0009826
+      duration: 0.000057
       messages: 
       output: 
       stacktrace: 
@@ -841,273 +814,224 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1022
+    - id: 1023
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.DotProductIsPositive]
       name: DotProductIsPositive
       fullName: VectorTests.DotProductIsPositive
-      resultStatus: 2
-      duration: 0.0004374
-      messages: "  Expected: greater than 0.0f\r\n  But was:  -1.0f\r\n"
+      resultStatus: 1
+      duration: 0.0000566
+      messages: 
       output: 
-      stacktrace: 'at VectorTests.DotProductIsPositive () [0x00039] in C:\Student
-        Githubs\GPAS1Template\Assets\Scripts\Tests\VectorTests.cs:155
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1021
+    - id: 1022
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.DotProductIsZero]
       name: DotProductIsZero
       fullName: VectorTests.DotProductIsZero
-      resultStatus: 2
-      duration: 0.0002357
-      messages: "  Expected: 0\r\n  But was:  -1.0f\r\n"
+      resultStatus: 1
+      duration: 0.0000572
+      messages: 
       output: 
-      stacktrace: 'at VectorTests.DotProductIsZero () [0x0003a] in C:\Student Githubs\GPAS1Template\Assets\Scripts\Tests\VectorTests.cs:145
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1024
+    - id: 1025
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Interpolate]
       name: Interpolate
       fullName: VectorTests.Interpolate
-      resultStatus: 2
-      duration: 0.0002416
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000658
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.Interpolate () [0x00043] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:176
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1020
+    - id: 1021
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.LimitToAboveLimit]
       name: LimitToAboveLimit
       fullName: VectorTests.LimitToAboveLimit
-      resultStatus: 2
-      duration: 0.0002371
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000612
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.LimitToAboveLimit () [0x0001a] in C:\\Student
-        Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:129 \r\n 
-        at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1019
+    - id: 1020
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.LimitToBelowLimit]
       name: LimitToBelowLimit
       fullName: VectorTests.LimitToBelowLimit
-      resultStatus: 2
-      duration: 0.0001654
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000601
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.LimitToBelowLimit () [0x0001a] in C:\\Student
-        Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:116 \r\n 
-        at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1017
+    - id: 1018
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Magnitude]
       name: Magnitude
       fullName: VectorTests.Magnitude
-      resultStatus: 2
-      duration: 0.00016
-      messages: "  Expected: 50\r\n  But was:  -1.0f\r\n"
+      resultStatus: 1
+      duration: 0.0000584
+      messages: 
       output: 
-      stacktrace: 'at VectorTests.Magnitude () [0x0001f] in C:\Student Githubs\GPAS1Template\Assets\Scripts\Tests\VectorTests.cs:91
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1015
+    - id: 1016
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Multiply]
       name: Multiply
       fullName: VectorTests.Multiply
-      resultStatus: 2
-      duration: 0.0001803
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000616
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.Multiply () [0x00028] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:64
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1018
+    - id: 1019
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Normalise]
       name: Normalise
       fullName: VectorTests.Normalise
-      resultStatus: 2
-      duration: 0.0001824
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000703
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.Normalise () [0x00021] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:100
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1025
+    - id: 1026
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.RotateX]
       name: RotateX
       fullName: VectorTests.RotateX
-      resultStatus: 2
-      duration: 0.0001862
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000702
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.RotateX () [0x00028] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:195
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1026
+    - id: 1027
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.RotateY]
       name: RotateY
       fullName: VectorTests.RotateY
-      resultStatus: 2
-      duration: 0.0001758
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000634
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.RotateY () [0x00028] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:210
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1027
+    - id: 1028
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.RotateZ]
       name: RotateZ
       fullName: VectorTests.RotateZ
-      resultStatus: 2
-      duration: 0.000176
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000629
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.RotateZ () [0x00028] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:224
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    - id: 1014
+    - id: 1015
       uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Subtract]
       name: Subtract
       fullName: VectorTests.Subtract
-      resultStatus: 2
-      duration: 0.0002088
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0000716
+      messages: 
       output: 
-      stacktrace: "  at VectorTests.Subtract () [0x0003c] in C:\\Student Githubs\\GPAS1Template\\Assets\\Scripts\\Tests\\VectorTests.cs:46
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <f3d0e7ec4efc44199bb22a77b1c8eff4>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1011
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
-    m_ResultText: 
-    m_ResultStacktrace: 
+    m_ResultText: "CreateTranslation (0.000s)\n---\nExpected: 1\r\n  But was:  0.0f\n---\nat
+      MatrixTests.CreateTranslation () [0x0001f] in G:\\Year 2\\Graphics and Simulation\\Lab
+      1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:65"
+    m_ResultStacktrace: 'at MatrixTests.CreateTranslation () [0x0001f] in G:\Year
+      2\Graphics and Simulation\Lab 1\the-labs-CalumBarr\Assets\Scripts\Tests\MatrixTests.cs:65
+
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6508c09d53e4e5ab0042e4dbf30b2f5bffffff7f
+      m_SelectedIDs: cfafc41c
+      m_LastClickedID: 482652111
+      m_ExpandedIDs: 3486e5926508c09d0042e4dbf30b2f5bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1154,9 +1078,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 562.6667
-    width: 1303
-    height: 316.3333
+    y: 842.6667
+    width: 1955.6666
+    height: 508.33337
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1178,7 +1102,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1186,16 +1110,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Student Githubs\GPAS1Template
+  m_LastProjectPath: G:\Year 2\Graphics and Simulation\Lab 1\the-labs-CalumBarr
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a060000
-    m_LastClickedID: 1626
-    m_ExpandedIDs: 00000000f205000000ca9a3bffffff7f
+    m_SelectedIDs: ac590000
+    m_LastClickedID: 22956
+    m_ExpandedIDs: 00000000a4590000ac59000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1223,7 +1147,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000a4590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1299,10 +1223,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1304
+    x: 1956.6667
     y: 72.66667
-    width: 401.66663
-    height: 806.3333
+    width: 602.3334
+    height: 1278.3334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1348,8 +1272,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 72.66667
-    width: 321.66666
-    height: 469
+    width: 482.33334
+    height: 749
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1363,9 +1287,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 18800000
+      m_SelectedIDs: 24120000
       m_LastClickedID: 0
-      m_ExpandedIDs: 182effff8e2fffff
+      m_ExpandedIDs: ead7ffffcad8ffffe2daffffd6dbffffc6dcffffa6ddffff92deffffd6e0ffff40e4ffff20e5ffff0ae8ffff22eaffff16ebffff58eeffff38efffffb8f1ffffb8f2ffffdcf4ffff72f6ffffbaf6ffffa0f7ffff8ef8ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1409,10 +1333,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 322.6667
+    x: 483.33334
     y: 72.66667
-    width: 979.3334
-    height: 469
+    width: 1471.3333
+    height: 749
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1428,7 +1352,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -164, y: -26.666656}
+      snapOffsetDelta: {x: -164, y: -26.666687}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1708,6 +1632,19 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: UnityEditor.SceneViewCameraOverlay
+      index: 9
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
@@ -1719,9 +1656,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0.19875431, y: 0.9377842, z: -10.15293}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0.19875431, y: 0.9377842, z: -10.15293}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1767,13 +1704,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.08645873, y: 0.90149266, z: -0.21232425, w: -0.36708906}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.08645873, y: 0.90149266, z: -0.21232425, w: -0.36708906}
   m_Size:
-    m_Target: 10
+    m_Target: 11.578759
     speed: 2
-    m_Value: 10
+    m_Value: 11.578759
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1818,10 +1755,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 322.6667
+    x: 484
     y: 72.66667
-    width: 979.3334
-    height: 469
+    width: 1470
+    height: 748.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1838,7 +1775,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 979.3334, y: 448}
+  m_TargetSize: {x: 1470, y: 727.3333}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1853,10 +1790,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -326.44446
-    m_HBaseRangeMax: 326.44446
-    m_VBaseRangeMin: -149.33334
-    m_VBaseRangeMax: 149.33334
+    m_HBaseRangeMin: -490
+    m_HBaseRangeMax: 490
+    m_VBaseRangeMin: -242.44444
+    m_VBaseRangeMax: 242.44444
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1874,23 +1811,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 979.3334
-      height: 448
+      width: 1470
+      height: 727.3333
     m_Scale: {x: 1.5, y: 1.5}
-    m_Translation: {x: 489.6667, y: 224}
+    m_Translation: {x: 735, y: 363.66666}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -326.44446
-      y: -149.33333
-      width: 652.8889
-      height: 298.66666
+      x: -490
+      y: -242.44444
+      width: 980
+      height: 484.8889
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1469, y: 703.5}
+  m_LastWindowPixelSize: {x: 2205, y: 1122.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
