@@ -1,6 +1,8 @@
 using Codice.Client.Common.GameUI;
+using GluonGui.Dialog;
 using System;
 using System.Collections.Generic;
+using System.Runtime.ExceptionServices;
 using UnityEngine;
 
 public class MyMatrix
@@ -42,12 +44,42 @@ public class MyMatrix
         matrix[3, 2] = pRow3Column2;
         matrix[3, 3] = pRow3Column3;
     }
+    public void SetTransform(Transform pGameObject)
+    {
+        SetPosition(pGameObject);
+        SetScale(pGameObject);
+        SetRotation(pGameObject);
+    }
+    private void SetPosition(Transform pTransformObject)
+    {
+        Vector3 position = pTransformObject.position;
+        pTransformObject.position = position;
+    }
+    private void SetScale(Transform pTransformObject)
+    {
+        Vector3 scale = new Vector3(matrix[0, 0], matrix[1, 1], matrix[2, 2]);
+        pTransformObject.localScale = scale;
+    }
+    private void SetRotation(Transform pTransformObject)
+    {
+        Matrix4x4 rotationMatrix = new Matrix4x4();
+        for(int row = 0; row < 3; row++)
+        {
+            for(int col = 0; col < 3; col++)
+            {
+                rotationMatrix[row, col] = matrix[row, col];
+            }
+        }
+        Vector3 euler = rotationMatrix.rotation.eulerAngles;
+        pTransformObject.rotation = Quaternion.Euler(euler);
+        
+    }
 
     public float GetElement(int pRow, int pColumn)
     {
         return matrix[pRow, pColumn];
     }
-    
+
     public static MyMatrix CreateIdentity()
     {
         
@@ -62,8 +94,8 @@ public class MyMatrix
     }
 
     public static MyMatrix CreateTranslation(MyVector pTranslation)
-    { 
-        MyMatrix translationMatrix = new MyMatrix();
+    {
+        MyMatrix translationMatrix = CreateIdentity();
         translationMatrix.matrix[0, 3] = pTranslation.X;
         translationMatrix.matrix[1, 3] = pTranslation.Y;
         translationMatrix.matrix[2, 3] = pTranslation.Z;
@@ -83,66 +115,125 @@ public class MyMatrix
 
     public static MyMatrix CreateRotationX(float pAngle)
     {
-        MyMatrix rotateMatrix = new MyMatrix();
+        MyMatrix rotationMatrix = CreateIdentity();
         float sin = Mathf.Sin(pAngle);
         float cos = Mathf.Cos(pAngle);
 
-        rotateMatrix.matrix[0, 0] = 1;
-        rotateMatrix.matrix[1, 1] = cos;
-        rotateMatrix.matrix[1, 2] = -sin;
-        rotateMatrix.matrix[2, 1] = sin;
-        rotateMatrix.matrix[2, 2] = cos;
-        rotateMatrix.matrix[3, 3] = 1;
+        rotationMatrix.matrix[0, 0] = 1;
+        rotationMatrix.matrix[1, 1] = cos;
+        rotationMatrix.matrix[1, 2] = -sin;
+        rotationMatrix.matrix[2, 1] = sin;
+        rotationMatrix.matrix[2, 2] = cos;
+        //rotationMatrix.matrix[3, 3] = 1;
 
 
-        return rotateMatrix;
+        return rotationMatrix;
     }
 
     public static MyMatrix CreateRotationY(float pAngle)
     {
-        //MyMatrix rotateMatrix = new MyMatrix();
-        //float sin = Mathf.Sin(pAngle);
-        //float cos = Mathf.Cos(pAngle);
+        MyMatrix rotationMatrix = CreateIdentity();
+        float sin = Mathf.Sin(pAngle);
+        float cos = Mathf.Cos(pAngle);
 
-        //rotateMatrix.matrix[0, 0] = cos;
-        //rotateMatrix.matrix[0, 2] = sin;
-        //rotateMatrix.matrix[2, 0] = -sin;
-        //rotateMatrix.matrix[2, 2] = cos;
-        //return rotateMatrix;
-        return null;
+        rotationMatrix.matrix[0, 0] = cos;
+        rotationMatrix.matrix[0, 2] = sin;
+        rotationMatrix.matrix[2, 0] = -sin;
+        rotationMatrix.matrix[2, 2] = cos;
+        //rotationMatrix.matrix[1, 1] = 1;
+        return rotationMatrix;
     }
 
     public static MyMatrix CreateRotationZ(float pAngle)
     {
-        //MyMatrix rotateMatrix = new MyMatrix();
-        //float sin = Mathf.Sin(pAngle);
-        //float cos = Mathf.Cos(pAngle);
+        MyMatrix rotationMatrix = CreateIdentity();
+        float sin = Mathf.Sin(pAngle);
+        float cos = Mathf.Cos(pAngle);
 
-        //rotateMatrix.matrix[0, 0] = cos;
-        //rotateMatrix.matrix[0, 1] = -sin;
-        //rotateMatrix.matrix[1, 0] = sin;
-        //rotateMatrix.matrix[1, 1] = cos;
-        //return rotateMatrix;
-        return null;
+        rotationMatrix.matrix[0, 0] = cos;
+        rotationMatrix.matrix[0, 1] = -sin;
+        rotationMatrix.matrix[1, 0] = sin;
+        rotationMatrix.matrix[1, 1] = cos;
+        //rotationMatrix.matrix[2, 2] = 1;
+        return rotationMatrix;
     }
 
     public MyVector Multiply(MyVector pVector)
     {
-        return null;
+        float[] vector = new float[4];
+        
+
+        for(int row = 0; row < 4; row++)
+        {
+            vector[row] = 0;
+
+            for(int col = 0; col < 4; col++)
+            {
+                if(col == 0)
+                {
+                    vector[row] += matrix[row, col] * pVector.X;
+                }
+                if (col == 1)
+                {
+                    vector[row] += matrix[row, col] * pVector.Y;
+                }
+                if (col == 2)
+                {
+                    vector[row] += matrix[row, col] * pVector.Z;
+                }
+                if (col == 3)
+                {
+                    vector[row] += matrix[row, col] * pVector.W;
+                }
+
+            }
+        }
+        return new MyVector(vector[0], vector[1], vector[2], vector[3]);
     }
+
 
     public MyMatrix Multiply(MyMatrix pMatrix)
     {
         MyMatrix multiplyMatrix = new MyMatrix();
 
-        //float newX = this.X * pScalar;
-        //float newY = this.Y * pScalar;
-        //float newZ = this.Z * pScalar;
-        //float newW = this.W * pScalar;
+        for (int row = 0; row < 4; row++)
+        {
+            for (int col = 0; col < 4; col++)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    multiplyMatrix.matrix[row, col] += this.matrix[row, i] * pMatrix.matrix[i, col];
+                }
+            }
+        }
 
-        //return new MyVector(newX, newY, newZ, newW);
-        return null;
+        return multiplyMatrix;
     }
+
+    //public MyMatrix Multiply(MyMatrix pMatrix)
+    //{
+
+    //    //if (matrix.GetLength(1) != pMatrix.matrix.GetLength(0))
+    //    //{
+    //    //    throw new Exception();
+    //    //}
+    //    //int rows = matrix.GetLength(0);
+    //    //int columns = pMatrix.matrix.GetLength(1);
+    //    //MyMatrix multiplyMatrix = new MyMatrix(rows, columns);
+        
+    //    //for(int i = 0; i < rows; i++)
+    //    //{
+    //    //    for(int j = 0; j < columns; j++)
+    //    //    {
+    //    //        int sum = 0;
+    //    //        for(int k = 0; k < matrix.GetLength(1); k++)
+    //    //        {
+    //    //            sum = matrix[i, j] = sum;
+    //    //        }
+    //    //    }
+    //    //}
+    //    return null;
+    //}
 
     public MyMatrix Inverse()
     {
