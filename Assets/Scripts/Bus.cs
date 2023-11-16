@@ -18,13 +18,20 @@ public class Bus
 
     public static void BuildBus()
     {
-        CreateBottomOfBus();
+        MyMatrix bottomBodyTransform = MyMatrix.CreateTranslation(new MyVector(0, 0, 0));
+        CreateBottomOfBus(bottomBodyTransform, new MyVector(1,0,0));
         CreateTopOfBus();
-        for(int i = 0; i <4; i++)
-        {
-            MyMatrix buildWheelParentTransform = MyMatrix.CreateTranslation(new MyVector(0.6f, 0.8f + i * 0.4f, 0f));
-            BuildWheel(buildWheelParentTransform);
-        }
+        MyMatrix wheelTransform = MyMatrix.CreateTranslation(new MyVector(0, 0, 0));
+        BuildWheel(wheelTransform, new MyVector(-1, -0.5f, 1));
+        BuildWheel(wheelTransform, new MyVector(1, -0.5f, 1));
+        BuildWheel(wheelTransform, new MyVector(-1, -0.5f, -1));
+        BuildWheel(wheelTransform, new MyVector(1, -0.5f, -1));
+        //for (int i = 0; i <4; i++)
+        //{
+        //    //MyMatrix buildWheelParentTransform = MyMatrix.CreateTranslation(new MyVector(0.6f, 0.8f + i * 0.4f, 0f));
+        //    //CreateWheel(buildWheelParentTransform);
+          
+        //}
     }
     public static void CreateBottomOfBus()
     {
@@ -44,9 +51,10 @@ public class Bus
         MyMatrix topTransformMatrix = MyMatrix.CreateTranslation(localTranslation);
         topTransformMatrix.SetTransform(bodyTop.transform);
     }
-    private static void BuildWheel(MyMatrix pParentTransform)
+    private static void BuildWheel(MyMatrix pParentTransform, MyVector pPosition)
     {
-        MyMatrix localTranslation = MyMatrix.CreateTranslation(new MyVector(2, 2, 2));
+        //localTranslation can also try MyVector(0,0,0)
+        MyMatrix localTranslation = MyMatrix.CreateTranslation(pPosition);
         MyMatrix localRotation = MyMatrix.CreateRotationY(Mathf.PI / 4);
         MyMatrix localScale = MyMatrix.CreateScale(new MyVector(0.2f, 0.2f, 0.2f));
 
@@ -58,6 +66,7 @@ public class Bus
         comboTransform.SetTransform(wheel.transform);
 
     }
+    
 
    
 }

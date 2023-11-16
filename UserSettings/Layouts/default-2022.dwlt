@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 2560
     height: 1349.3334
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -142,8 +142,8 @@ MonoBehaviour:
     y: 0
     width: 603.3334
     height: 1299.3334
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 483.33334
     height: 770
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 0
     width: 1473.3333
     height: 770
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -452,7 +452,7 @@ MonoBehaviour:
       name: GPaS1TestLabs2
       fullName: GPaS1TestLabs2
       resultStatus: 2
-      duration: 0.0479753
+      duration: 0.0261356
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -463,9 +463,541 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
+    - id: 1031
+      uniqueId: '[Tests][G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll][suite]'
+      name: Tests.dll
+      fullName: G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 2
+      duration: 0.0120952
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[GPaS1TestLabs2][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/[Tests][MatrixTests][suite]
+      name: MatrixTests
+      fullName: MatrixTests
+      resultStatus: 2
+      duration: 0.0023555
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: '[Tests][G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1002
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.Constructor]
+      name: Constructor
+      fullName: MatrixTests.Constructor
+      resultStatus: 1
+      duration: 0.0001208
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateIdentity]
+      name: CreateIdentity
+      fullName: MatrixTests.CreateIdentity
+      resultStatus: 1
+      duration: 0.0000883
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1006
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateRotationX]
+      name: CreateRotationX
+      fullName: MatrixTests.CreateRotationX
+      resultStatus: 1
+      duration: 0.0000736
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1007
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateRotationY]
+      name: CreateRotationY
+      fullName: MatrixTests.CreateRotationY
+      resultStatus: 1
+      duration: 0.0000698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateRotationZ]
+      name: CreateRotationZ
+      fullName: MatrixTests.CreateRotationZ
+      resultStatus: 1
+      duration: 0.0000685
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1005
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateScale]
+      name: CreateScale
+      fullName: MatrixTests.CreateScale
+      resultStatus: 1
+      duration: 0.0000684
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.CreateTranslation]
+      name: CreateTranslation
+      fullName: MatrixTests.CreateTranslation
+      resultStatus: 1
+      duration: 0.0000691
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1011
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.Inverse]
+      name: Inverse
+      fullName: MatrixTests.Inverse
+      resultStatus: 2
+      duration: 0.0002351
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at MyMatrix.Multiply (MyMatrix pMatrix) [0x00012] in G:\\Year
+        2\\Graphics and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\MyMatrix.cs:205
+        \r\n  at MatrixTests.Inverse () [0x0005b] in G:\\Year 2\\Graphics and Simulation\\Lab
+        1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:305 \r\n  at
+        (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1010
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.Multiply]
+      name: Multiply
+      fullName: MatrixTests.Multiply
+      resultStatus: 1
+      duration: 0.0001301
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1009
+      uniqueId: Tests.dll/MatrixTests/[Tests][MatrixTests.MultiplyVector]
+      name: MultiplyVector
+      fullName: MatrixTests.MultiplyVector
+      resultStatus: 1
+      duration: 0.00007
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][MatrixTests][suite]
+    - id: 1012
+      uniqueId: Tests.dll/[Tests][VectorTests][suite]
+      name: VectorTests
+      fullName: VectorTests
+      resultStatus: 1
+      duration: 0.0088118
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: '[Tests][G:/Year 2/Graphics and Simulation/Lab 1/the-labs-CalumBarr/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1014
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Add]
+      name: Add
+      fullName: VectorTests.Add
+      resultStatus: 1
+      duration: 0.0002053
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1029
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.AngleBetween]
+      name: AngleBetween
+      fullName: VectorTests.AngleBetween
+      resultStatus: 1
+      duration: 0.0000795
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1013
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Constructor]
+      name: Constructor
+      fullName: VectorTests.Constructor
+      resultStatus: 1
+      duration: 0.0000657
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1030
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.CrossProduct]
+      name: CrossProduct
+      fullName: VectorTests.CrossProduct
+      resultStatus: 1
+      duration: 0.0000699
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1017
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Divide]
+      name: Divide
+      fullName: VectorTests.Divide
+      resultStatus: 1
+      duration: 0.0000646
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1024
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.DotProductIsNegative]
+      name: DotProductIsNegative
+      fullName: VectorTests.DotProductIsNegative
+      resultStatus: 1
+      duration: 0.0000519
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1023
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.DotProductIsPositive]
+      name: DotProductIsPositive
+      fullName: VectorTests.DotProductIsPositive
+      resultStatus: 1
+      duration: 0.0000531
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1022
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.DotProductIsZero]
+      name: DotProductIsZero
+      fullName: VectorTests.DotProductIsZero
+      resultStatus: 1
+      duration: 0.0000537
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1025
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Interpolate]
+      name: Interpolate
+      fullName: VectorTests.Interpolate
+      resultStatus: 1
+      duration: 0.000064
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1021
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.LimitToAboveLimit]
+      name: LimitToAboveLimit
+      fullName: VectorTests.LimitToAboveLimit
+      resultStatus: 1
+      duration: 0.0000641
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1020
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.LimitToBelowLimit]
+      name: LimitToBelowLimit
+      fullName: VectorTests.LimitToBelowLimit
+      resultStatus: 1
+      duration: 0.0000555
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1018
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Magnitude]
+      name: Magnitude
+      fullName: VectorTests.Magnitude
+      resultStatus: 1
+      duration: 0.0000513
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1016
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Multiply]
+      name: Multiply
+      fullName: VectorTests.Multiply
+      resultStatus: 1
+      duration: 0.0000638
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1019
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Normalise]
+      name: Normalise
+      fullName: VectorTests.Normalise
+      resultStatus: 1
+      duration: 0.0000647
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1026
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.RotateX]
+      name: RotateX
+      fullName: VectorTests.RotateX
+      resultStatus: 1
+      duration: 0.0000626
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1027
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.RotateY]
+      name: RotateY
+      fullName: VectorTests.RotateY
+      resultStatus: 1
+      duration: 0.0000566
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1028
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.RotateZ]
+      name: RotateZ
+      fullName: VectorTests.RotateZ
+      resultStatus: 1
+      duration: 0.0000607
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
+    - id: 1015
+      uniqueId: Tests.dll/VectorTests/[Tests][VectorTests.Subtract]
+      name: Subtract
+      fullName: VectorTests.Subtract
+      resultStatus: 1
+      duration: 0.0000612
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][VectorTests][suite]
     m_ResultText: "Inverse (0.000s)\n---\nSystem.NullReferenceException : Object
       reference not set to an instance of an object\n---\nat MyMatrix.Multiply (MyMatrix
-      pMatrix) [0x00012] in G:\\Year 2\\Graphics and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\MyMatrix.cs:175
+      pMatrix) [0x00012] in G:\\Year 2\\Graphics and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\MyMatrix.cs:205
       \r\n  at MatrixTests.Inverse () [0x0005b] in G:\\Year 2\\Graphics and Simulation\\Lab
       1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:305 \r\n  at
       (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
@@ -473,7 +1005,7 @@ MonoBehaviour:
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0"
     m_ResultStacktrace: "  at MyMatrix.Multiply (MyMatrix pMatrix) [0x00012] in G:\\Year
-      2\\Graphics and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\MyMatrix.cs:175
+      2\\Graphics and Simulation\\Lab 1\\the-labs-CalumBarr\\Assets\\Scripts\\MyMatrix.cs:205
       \r\n  at MatrixTests.Inverse () [0x0005b] in G:\\Year 2\\Graphics and Simulation\\Lab
       1\\the-labs-CalumBarr\\Assets\\Scripts\\Tests\\MatrixTests.cs:305 \r\n  at
       (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
@@ -740,9 +1272,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 16120000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: cafaffff
+      m_ExpandedIDs: 02f1ffffcaf1ffff1ef2ffffe6f2ffff12f4ffffdaf4ffff3ef6ffff06f7ffff56f7ffff20f8ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -804,8 +1336,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -164, y: -26.666687}
+      snapOffset: {x: -166, y: -26.666687}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1161,9 +1693,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08645873, y: 0.90149266, z: -0.21232425, w: -0.36708906}
   m_Size:
-    m_Target: 11.578759
+    m_Target: 12.050848
     speed: 2
-    m_Value: 11.578759
+    m_Value: 12.050848
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1208,10 +1740,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 484
+    x: 483.33334
     y: 72.66667
-    width: 1470
-    height: 748.3333
+    width: 1471.3333
+    height: 749
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1228,7 +1760,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1470, y: 727.3333}
+  m_TargetSize: {x: 1471.3333, y: 728}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1243,10 +1775,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -490
-    m_HBaseRangeMax: 490
-    m_VBaseRangeMin: -242.44444
-    m_VBaseRangeMax: 242.44444
+    m_HBaseRangeMin: -490.44443
+    m_HBaseRangeMax: 490.44443
+    m_VBaseRangeMin: -242.66667
+    m_VBaseRangeMax: 242.66667
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1264,23 +1796,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1470
-      height: 727.3333
+      width: 1471.3333
+      height: 728
     m_Scale: {x: 1.5, y: 1.5}
-    m_Translation: {x: 735, y: 363.66666}
+    m_Translation: {x: 735.6666, y: 364}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -490
-      y: -242.44444
-      width: 980
-      height: 484.8889
+      x: -490.44443
+      y: -242.66667
+      width: 980.88885
+      height: 485.33334
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2205, y: 1122.5}
+  m_LastWindowPixelSize: {x: 2207, y: 1123.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
