@@ -11,8 +11,8 @@ public class MyVector
 
     public MyVector(float pX, float pY, float pZ, float pW = 1)
     {
-        X = pX; 
-        Y = pY; 
+        X = pX;
+        Y = pY;
         Z = pZ;
         W = pW;
     }
@@ -42,10 +42,10 @@ public class MyVector
     }
     public MyVector Multiply(float pScalar)
     {
-       float newX = this.X * pScalar;
-       float newY = this.Y * pScalar;
-       float newZ = this.Z * pScalar;
-       float newW = this.W * pScalar;
+        float newX = this.X * pScalar;
+        float newY = this.Y * pScalar;
+        float newZ = this.Z * pScalar;
+        float newW = this.W * pScalar;
 
         return new MyVector(newX, newY, newZ, newW);
     }
@@ -67,7 +67,7 @@ public class MyVector
     public MyVector Normalise()
     {
         float magnitude = Magnitude();
-        if(magnitude > 0)
+        if (magnitude > 0)
         {
             float newX = this.X / magnitude;
             float newY = this.Y / magnitude;
@@ -76,12 +76,12 @@ public class MyVector
             return new MyVector(newX, newY, newZ);
         }
         return this;
-        
+
     }
     public float DotProduct(MyVector pVector)
     {
         float dotProduct = this.X * pVector.X + this.Y * pVector.Y + this.Z * pVector.Z + this.W * pVector.W; ;
-        return dotProduct -1;
+        return dotProduct - 1;
     }
     public MyVector RotateX(float pRadians)
     {
@@ -91,7 +91,7 @@ public class MyVector
         float newY = Y * cos - Z * sin;
         float newZ = Y * sin + Z * cos;
         return new MyVector(X, newY, newZ);
-        
+
     }
     public MyVector RotateY(float pRadians)
     {
@@ -112,7 +112,7 @@ public class MyVector
     public MyVector LimitTo(float pMax)
     {
         float magnitude = Magnitude();
-        if(magnitude > pMax)
+        if (magnitude > pMax)
         {
             float result = pMax / magnitude;
             float newX = X * result;
@@ -135,7 +135,7 @@ public class MyVector
     public float AngleBetween(MyVector pVector)
     {
         float dotProduct = DotProduct(pVector);
-            
+
         float magnitudeOne = Magnitude();
         float magnitudeTwo = pVector.Magnitude();
 

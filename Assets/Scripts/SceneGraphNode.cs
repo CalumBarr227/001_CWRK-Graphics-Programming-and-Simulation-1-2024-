@@ -1,23 +1,23 @@
-using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class SceneGraphNode
+
+public abstract class SceneGraphNode
 {
-    public SceneGraphNode(string pName, MyMatrix pTransform, GameObject pGameObject = null)
+    string name;
+    public MyMatrix localTransform;
+    GameObject gameObject;
+
+    public SceneGraphNode(string pName)
+    {
+        name = pName;
+    }
+    public virtual void Draw(MyMatrix pParentTransform)
     {
 
     }
-    public static void GetNumberOfChildren()
-    {
-
-    }
-    public static void GetChildAt(int pIndex)
-    {
-
-    }
-    public static void AddChild(SceneGraphNode pGraphNode)
-    {
-
-    }
+    public abstract void Accept(RenderVisitor pVisitor);
 }
+
+

@@ -1,5 +1,4 @@
-using Codice.Client.Common.GameUI;
-using GluonGui.Dialog;
+
 using System;
 using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
@@ -44,49 +43,69 @@ public class MyMatrix
         matrix[3, 2] = pRow3Column2;
         matrix[3, 3] = pRow3Column3;
     }
-    public void SetTransform(Transform pGameObject)
+    public void SetTransform(GameObject pObject)
     {
-        SetPosition(pGameObject);
-        SetScale(pGameObject);
-        SetRotation(pGameObject);
-    }
-    private void SetPosition(Transform pTransformObject)
-    {
-        Vector3 position = pTransformObject.position;
-        pTransformObject.position = position;
-    }
-    private void SetScale(Transform pTransformObject)
-    {
-        Vector3 scale = new Vector3(matrix[0, 0], matrix[1, 1], matrix[2, 2]);
-        pTransformObject.localScale = scale;
-    }
-    private void SetRotation(Transform pTransformObject)
-    {
-        Matrix4x4 rotationMatrix = new Matrix4x4();
-        for(int row = 0; row < 3; row++)
-        {
-            for(int col = 0; col < 3; col++)
-            {
-                rotationMatrix[row, col] = matrix[row, col];
-            }
-        }
-        Vector3 euler = rotationMatrix.rotation.eulerAngles;
-        pTransformObject.rotation = Quaternion.Euler(euler);
-        
+        Transform transform = pObject.transform;
+        SetPosition(pObject);
+        SetScale(pObject);
+        SetRotation(pObject);
     }
 
+    private void SetPosition(GameObject pObject)
+    {
+        Vector3 position = new Vector3(GetElement(0, 3), GetElement(1, 3), GetElement(2, 3));
+        pObject.transform.position = position;
+
+    }
+
+    private void SetScale(GameObject pObject)
+    {
+        Vector3 scale;
+        MyVector xColumn = new MyVector(GetElement(0, 0), GetElement(1, 0), GetElement(2, 0), GetElement(3, 0));
+        float xScale = xColumn.Magnitude();
+
+        MyVector yColumn = new MyVector(GetElement(0, 1), GetElement(1, 1), GetElement(2, 1), GetElement(3, 1));
+        float yScale = yColumn.Magnitude();
+
+        MyVector zColumn = new MyVector(GetElement(0, 2), GetElement(1, 2), GetElement(2, 2), GetElement(3, 2));
+        float zScale = zColumn.Magnitude();
+
+        scale.x = xScale;
+        scale.y = yScale;
+        scale.z = zScale;
+        pObject.transform.localScale = scale;
+
+    }
+
+    private void SetRotation(GameObject pObject)
+    {
+        Vector3 direction;
+        direction.x = GetElement(0, 2);
+        direction.y = GetElement(1, 2);
+        direction.z = GetElement(2, 2);
+
+        Vector3 vert;
+        vert.x = GetElement(0, 1);
+        vert.y = GetElement(1, 1);
+        vert.z = GetElement(2, 1);
+
+        pObject.transform.rotation = Quaternion.LookRotation(direction, vert);
+    }
     public float GetElement(int pRow, int pColumn)
     {
         return matrix[pRow, pColumn];
     }
-
+    public void SetElement(int pRow, int pColumn, float pValue)
+    {
+        matrix[pRow, pColumn] = pValue;
+    }
     public static MyMatrix CreateIdentity()
     {
-        
+
         MyMatrix identityMatrix = new MyMatrix();
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
-  
+
             identityMatrix.matrix[i, i] = 1.0f;
 
         }
@@ -107,7 +126,7 @@ public class MyMatrix
     {
         MyMatrix scaleMatrix = new MyMatrix();
         scaleMatrix.matrix[0, 0] = pScale.X;
-        scaleMatrix.matrix[1,1] = pScale.Y;
+        scaleMatrix.matrix[1, 1] = pScale.Y;
         scaleMatrix.matrix[2, 2] = pScale.Z;
         scaleMatrix.matrix[3, 3] = 1.0f;
         return scaleMatrix;
@@ -161,15 +180,15 @@ public class MyMatrix
     public MyVector Multiply(MyVector pVector)
     {
         float[] vector = new float[4];
-        
 
-        for(int row = 0; row < 4; row++)
+
+        for (int row = 0; row < 4; row++)
         {
             vector[row] = 0;
 
-            for(int col = 0; col < 4; col++)
+            for (int col = 0; col < 4; col++)
             {
-                if(col == 0)
+                if (col == 0)
                 {
                     vector[row] += matrix[row, col] * pVector.X;
                 }
@@ -194,46 +213,26 @@ public class MyMatrix
 
     public MyMatrix Multiply(MyMatrix pMatrix)
     {
-        MyMatrix multiplyMatrix = new MyMatrix();
+        MyMatrix multiplyMatrix = MyMatrix.CreateIdentity();
 
         for (int row = 0; row < 4; row++)
         {
-            for (int col = 0; col < 4; col++)
+            for (int column = 0; column < 4; column++)
             {
-                for (int i = 0; i < 4; i++)
-                {
-                    multiplyMatrix.matrix[row, col] += this.matrix[row, i] * pMatrix.matrix[i, col];
-                }
+                multiplyMatrix.SetElement(
+                    row,
+                    column,
+                    this.GetElement(row, 0) * pMatrix.GetElement(0, column) +
+                    this.GetElement(row, 1) * pMatrix.GetElement(1, column) +
+                    this.GetElement(row, 2) * pMatrix.GetElement(2, column) +
+                    this.GetElement(row, 3) * pMatrix.GetElement(3, column)
+                    );
             }
         }
 
         return multiplyMatrix;
     }
 
-    //public MyMatrix Multiply(MyMatrix pMatrix)
-    //{
-
-    //    //if (matrix.GetLength(1) != pMatrix.matrix.GetLength(0))
-    //    //{
-    //    //    throw new Exception();
-    //    //}
-    //    //int rows = matrix.GetLength(0);
-    //    //int columns = pMatrix.matrix.GetLength(1);
-    //    //MyMatrix multiplyMatrix = new MyMatrix(rows, columns);
-        
-    //    //for(int i = 0; i < rows; i++)
-    //    //{
-    //    //    for(int j = 0; j < columns; j++)
-    //    //    {
-    //    //        int sum = 0;
-    //    //        for(int k = 0; k < matrix.GetLength(1); k++)
-    //    //        {
-    //    //            sum = matrix[i, j] = sum;
-    //    //        }
-    //    //    }
-    //    //}
-    //    return null;
-    //}
 
     public MyMatrix Inverse()
     {
