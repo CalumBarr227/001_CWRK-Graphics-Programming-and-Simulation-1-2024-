@@ -36,12 +36,12 @@ This Unity project was devleoped as part of the **Graphics Programming and Simul
 - RenderVisitor pattern used to traverse and render nodes
 - Operates independently of Unity's internal GameObject hierarchy
 
-### Physics Simulation
+### 5. Physics Simulation
 - Processor-independent animations using Unity's Time.deltaTime
 - Supports moving and stationary objects
 - Physics computations implemented in scripts
 
-### Collision Handling
+### 6. Collision Handling
 - Collisions supported between:
   - 3D spheres
   - Axis-aligned cylinders
